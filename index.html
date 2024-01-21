@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox and Grid Navbar</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #7e8c94;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns: logo and nav items */
+  align-items: center;
+}
+
+.nav-logo {
+
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #050808;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #2c3e50;
+}
+ </style>
+ 
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <img src="Dark-logo.png" width="200">
+      <div class="nav-items">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+</body>
+</html>
